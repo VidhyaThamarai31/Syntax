@@ -1,0 +1,135 @@
+C++ basics:
+
+#include<iostream>
+#include<math.h>
+#include<string>    -> { for all these we can use #include<bits/stdc++.h> }
+
+using namespace std; //so that we don't want to write std in each step
+
+int main()
+{
+   //int
+   int x;   => { for new line we can give endl or "\n"   ->  endl takes less space then "\n" }
+   
+//long
+long x;
+
+//long long
+long long x;
+
+//float
+float x;
+
+//double
+double x;
+
+ cin>>x;   -> for every value we can directly assign largest size data type , but it take more space
+
+//if u give initialization in integer , but the return type is float or double -> it returns in integer type.
+
+float x=5;
+cout<<x; //5
+
+string s1;
+cin>>s1;   // hi vidhya
+cout<<s1;  // hi    ->   {here if space encounters next word cannot print }
+
+form 1: (splitting)
+string s1;
+string s2;   // string s2="vidhya"  {string always in double quotes}
+cin>>s1>>s2;  // hi vidhya
+cout<<s1<<" "<<s2;  // hi vidhya
+
+form 2:  (getline)
+string s1;
+getline(cin,s1);  // hi vidhya
+cout<<s1;   // hi vidhya  { prints till the line ends }
+
+//char
+char ch;   -> char ch='v';  {char always in single quotes}
+cin>>ch; // v
+cout<<ch; // v
+
+}
+
+If-else statement:
+
+if(condition)  // if we give more "if" condition , all the if condition runs definitely
+{
+}
+else   // but if we give "else" condition rather than "if" , only "if" condition false then goe to else condition.
+{
+}
+
+Switch statement:
+
+switch(choice:
+case "choice"
+{
+}
+
+
+
+Arrays:
+
+=> collection of data with same data type 
+=> contigious memory allocation
+
+ex:
+
+int arr[5];
+int arr[3][5]; // 2D array {3rows and 5 columns}
+                j=0  j=1 j=2 j=3 j=4
+         i=0      1   2   3   4   5
+         i=1      6   7   8   9   10
+         i=2      11  12  13  14  15
+
+Strings:
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+string s="vidhya";   //in c++ , we can directly convert string to character and can easily accessed .
+int len=s.size();
+cout<<s[len-1];  // a
+}
+
+For loop:
+
+for(int i=0;i<5;i++)
+{
+cout<<"vidhya "<<i<<endl;   // runs until the condition false
+}
+
+while loop:
+
+int i=1;
+while(i<=5)
+{
+  cout<<"vidhya "<<i<<endl;  // runs until the condition false
+  i++;
+}
+
+
+Do while loop:
+
+int i=1;
+do
+{
+  cout<<"vidhya "<<i<<endl;   // this line runs once , even without checking the condition
+  i++;
+}
+while(i<=5);
+
+
+Functions:
+
+=> used for better readability
+=> used for reuse the same code.
+
+=>call by reference - changing in original position   // in array - it is always call by reference.
+=>call by value -> change in copies only , not at the original value
+
+
+
